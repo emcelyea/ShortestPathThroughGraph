@@ -1,3 +1,8 @@
+//read in a text file of interconnected cities.
+//get user input for from/to
+//give list of potential cities if input is partial
+//find and display shortest route through cities
+
 #include <iostream>
 #include <fstream>
 #include <string>
