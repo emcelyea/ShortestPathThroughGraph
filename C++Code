@@ -1,7 +1,7 @@
 //read in a text file of interconnected cities.
 //get user input for from/to
 //give list of potential cities if input is partial
-//find and display shortest route through cities
+//find and display shortest route to get from start to finish
 
 #include <iostream>
 #include <fstream>
@@ -11,9 +11,16 @@
 #include <list>
 using namespace std;
 
- int processFile(string cityName[], string f);
+//pull city names from file
+ int processFile(string cityName[], string f); 
+
+ //pull city from/to info from file
  void createVector(vector<int> arr[], string cityName[], int size, string fileName);
+ 
+ //get user input, will return list of potential inputs if no match
  int getUserInput(string seek, string cityName[], int size);
+ 
+ //Dijkstras algorithm implementation
  void bfs (vector<int> alists[], int size, int start, int target,string arr[]);
 
  int main(){
